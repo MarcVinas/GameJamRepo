@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour {
 
-    //A LA CUARTA VA LA VENCIDA UEEEEE
+    //A LA CUARTA VA LA VENCIDA UEEE
+    //Pues volia fer una cinquena
 
     //bullet
     public GameObject prefab;
