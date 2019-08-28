@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterController : MonoBehaviour {
 
+    //A LA CUARTA VA LA VENCIDA UEEEEE
+
     //bullet
     public GameObject prefab;
     public Transform shootPoint;
