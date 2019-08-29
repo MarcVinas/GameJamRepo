@@ -8,7 +8,7 @@ public class CharacterController : MonoBehaviour {
     //Pues volia fer una cinquena
 
     //bullet
-    public GameObject prefab;
+    public GameObject [] prefab;
     public Transform shootPoint;
     public float bulletForce;
     private bool canShoot = true;
@@ -40,7 +40,7 @@ public class CharacterController : MonoBehaviour {
         {
             canShoot = false;
             //instancio el bullet
-            GameObject bullet = Instantiate(prefab, shootPoint.position, Quaternion.identity);
+            GameObject bullet = Instantiate(prefab[Random.Range(0, prefab.Length)], shootPoint.position, Quaternion.identity);
             //disparo el bullet en la direccion del cannon
             Rigidbody bulletRB = bullet.GetComponent<Rigidbody>();
             bulletRB.AddForce(shootPoint.forward * bulletForce);
